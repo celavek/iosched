@@ -23,7 +23,7 @@
     <!-- Collection View which holds the explore card stream
          We have to disable clipping as CardView (used in the stream) draws outside it's
          bounds to show a shadow. -->
-    <com.google.samples.apps.iosched.ui.widget.CollectionView
+    <com.meetingcpp.sched.ui.widget.CollectionView
         android:id="@+id/explore_collection_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

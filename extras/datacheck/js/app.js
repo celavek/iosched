@@ -37,10 +37,10 @@
       window.alert("invalid iosched data, check console");
       return;
     }
-    this.ioschedData = {};
+    thisData = {};
     for (var i=0; i<data["sessions"].length; i++) {
       var session = data["sessions"][i];
-      this.ioschedData[session["id"]] = session;
+      thisData[session["id"]] = session;
     }
   }
 
@@ -60,7 +60,7 @@
       cell.querySelector(".title").innerText = topic.title;
       var link = cell.querySelector(".session_web");
       link.href = 'https://www.google.com/events/io/schedule/session/'+topic['id'];
-      var linkImg = cell.querySelector(".iosched_img");
+      var linkImg = cell.querySelector("_img");
       linkImg.href = 'http://storage.googleapis.com/iosched-updater-dev.appspot.com/images/sessions/w1000/'+topic["id"]+".jpg";
       var imagesLinks = cell.querySelector(".images_from_cms");
       if ("documents" in topic) for (var d=0; d<topic["documents"].length; d++) {
@@ -90,7 +90,7 @@
       }.bind(this, topic));
 
       ioschedData.addEventListener('click', function(id, e) {
-        this.showData(this.ioschedData[id]);
+        this.showData(thisData[id]);
         e.preventDefault();
         e.stopPropagation();
       }.bind(this, topic["id"]));
@@ -113,7 +113,7 @@
         document.body.classList.remove("showDialog");
       }
     });
-        
+
     document.body.addEventListener('click', function(e) {
       document.body.classList.remove("showDialog");
     });

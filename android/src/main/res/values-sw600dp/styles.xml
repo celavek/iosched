@@ -17,7 +17,7 @@
 <resources>
 
     <!-- Intermediary theme for SessionDetails, making it a floating dialog -->
-    <style name="Theme.IOSched.SessionDetails.Base" parent="Theme.IOSched">
+    <style name="Theme.Meeting.SessionDetails.Base" parent="Theme.Meeting">
         <item name="isFloatingWindow">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowIsFloating">false</item>
@@ -28,6 +28,6 @@
         <item name="android:colorBackgroundCacheHint">@null</item>
     </style>
 
-    <style name="Theme.IOSched.SessionDetails" parent="Theme.IOSched.SessionDetails.Base" />
+    <style name="Theme.SessionDetails" parent="Theme.Meeting.SessionDetails.Base" />
 
 </resources>

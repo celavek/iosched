@@ -21,7 +21,7 @@
     android:layout_height="@dimen/add_to_schedule_button_height"
     android:layout_marginLeft="@dimen/keyline_1_minus_8dp">
 
-    <com.google.samples.apps.iosched.ui.widget.CheckableFloatingActionButton
+    <com.meetingcpp.sched.ui.widget.CheckableFloatingActionButton
         android:id="@+id/add_schedule_button"
         android:layout_width="@dimen/add_to_schedule_button_height_no_padding"
         android:layout_height="@dimen/add_to_schedule_button_height_no_padding"

@@ -27,7 +27,7 @@
 
     <servlet>
         <servlet-name>logData</servlet-name>
-        <servlet-class>com.google.samples.apps.iosched.server.schedule.server.servlet.LogDataServlet</servlet-class>
+        <servlet-class>com.meetingcpp.sched.server.schedule.server.servlet.LogDataServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -37,7 +37,7 @@
 
     <servlet>
         <servlet-name>runupdate</servlet-name>
-        <servlet-class>com.google.samples.apps.iosched.server.schedule.server.servlet.RunUpdateServlet</servlet-class>
+        <servlet-class>com.meetingcpp.sched.server.schedule.server.servlet.RunUpdateServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -47,7 +47,7 @@
 
     <servlet>
         <servlet-name>cmsupdate</servlet-name>
-        <servlet-class>com.google.samples.apps.iosched.server.schedule.server.servlet.CMSUpdateServlet</servlet-class>
+        <servlet-class>com.meetingcpp.sched.server.schedule.server.servlet.CMSUpdateServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -79,7 +79,7 @@
     <!-- context initializer -->
     <listener>
         <listener-class>
-            com.google.samples.apps.iosched.server.gcm.db.ApiKeyInitializer
+            com.meetingcpp.sched.server.gcm.db.ApiKeyInitializer
         </listener-class>
     </listener>
 
@@ -87,7 +87,7 @@
     <servlet>
         <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>
-            com.google.samples.apps.iosched.server.gcm.device.RegisterServlet
+            com.meetingcpp.sched.server.gcm.device.RegisterServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -99,7 +99,7 @@
     <servlet>
         <servlet-name>UnregisterServlet</servlet-name>
         <servlet-class>
-            com.google.samples.apps.iosched.server.gcm.device.UnregisterServlet
+            com.meetingcpp.sched.server.gcm.device.UnregisterServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -112,7 +112,7 @@
     <servlet>
         <servlet-name>MulticastQueueWorker</servlet-name>
         <servlet-class>
-            com.google.samples.apps.iosched.server.gcm.device.MulticastQueueWorker
+            com.meetingcpp.sched.server.gcm.device.MulticastQueueWorker
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -125,7 +125,7 @@
     <servlet>
         <servlet-name>SendMessageServlet</servlet-name>
         <servlet-class>
-            com.google.samples.apps.iosched.server.gcm.api.SendMessageServlet
+            com.meetingcpp.sched.server.gcm.api.SendMessageServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -138,7 +138,7 @@
     <servlet>
         <servlet-name>AdminServlet</servlet-name>
         <servlet-class>
-            com.google.samples.apps.iosched.server.gcm.admin.AdminServlet
+            com.meetingcpp.sched.server.gcm.admin.AdminServlet
         </servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
@@ -160,7 +160,7 @@
     <servlet>
         <servlet-name>VacuumDbServlet</servlet-name>
         <servlet-class>
-            com.google.samples.apps.iosched.server.gcm.cron.VacuumDbServlet
+            com.meetingcpp.sched.server.gcm.cron.VacuumDbServlet
         </servlet-class>
     </servlet>
     <servlet-mapping>

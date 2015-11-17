@@ -16,7 +16,7 @@
   -->
 <!-- Layout for the Explore I/O Keynote card.
      NOTE: Multiple qualified layouts exist, make sure to keep them in sync. -->
-<com.google.samples.apps.iosched.ui.widget.ForegroundLinearLayout
+<com.meetingcpp.sched.ui.widget.ForegroundLinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -29,7 +29,7 @@
     android:orientation="vertical"
     android:foreground="?android:selectableItemBackground">
 
-    <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+    <com.meetingcpp.sched.ui.widget.AspectRatioView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:aspectRatio="@dimen/aspect_16_9">
@@ -41,7 +41,7 @@
             android:src="@drawable/io_logo"
             android:scaleType="centerCrop" />
 
-    </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+    </com.meetingcpp.sched.ui.widget.AspectRatioView>
 
     <TextView
         android:id="@+id/title"
@@ -70,4 +70,4 @@
         android:textAppearance="@style/TextAppearance.SessionTitle"
         tools:text="@string/placeholder_session_subtitle" />
 
-</com.google.samples.apps.iosched.ui.widget.ForegroundLinearLayout>
+</com.meetingcpp.sched.ui.widget.ForegroundLinearLayout>

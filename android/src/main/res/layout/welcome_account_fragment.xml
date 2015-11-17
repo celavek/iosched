@@ -20,7 +20,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.samples.apps.iosched.welcome.AccountFragment"
+    tools:context="com.meetingcpp.sched.welcome.AccountFragment"
     android:orientation="vertical"
     android:padding="@dimen/welcome_content_padding">
 

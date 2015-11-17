@@ -83,7 +83,7 @@ limitations under the License.
         android:background="@drawable/inset_divider_top_only"
         android:visibility="gone" />
 
-    <com.google.samples.apps.iosched.ui.widget.CollectionView
+    <com.meetingcpp.sched.ui.widget.CollectionView
         android:id="@+id/drawer_collection_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

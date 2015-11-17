@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-        <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+        <com.meetingcpp.sched.ui.widget.AspectRatioView
             android:id="@+id/io15_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,9 +51,9 @@
 
                 <include layout="@layout/social_icons_horizontal" />
             </RelativeLayout>
-        </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+        </com.meetingcpp.sched.ui.widget.AspectRatioView>
 
-        <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+        <com.meetingcpp.sched.ui.widget.AspectRatioView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:aspectRatio="3.236">
@@ -101,9 +101,9 @@
                         android:clickable="true" />
                 </FrameLayout>
             </LinearLayout>
-        </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+        </com.meetingcpp.sched.ui.widget.AspectRatioView>
 
-        <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+        <com.meetingcpp.sched.ui.widget.AspectRatioView
             android:id="@+id/extended_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -143,9 +143,9 @@
                     <include layout="@layout/social_icons_vertical"></include>
                 </RelativeLayout>
             </LinearLayout>
-        </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+        </com.meetingcpp.sched.ui.widget.AspectRatioView>
 
-        <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+        <com.meetingcpp.sched.ui.widget.AspectRatioView
             android:id="@+id/request_panel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -185,9 +185,9 @@
                     <include layout="@layout/social_icons_vertical"></include>
                 </RelativeLayout>
             </LinearLayout>
-        </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+        </com.meetingcpp.sched.ui.widget.AspectRatioView>
 
-        <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+        <com.meetingcpp.sched.ui.widget.AspectRatioView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/social_logo_background"
@@ -204,6 +204,6 @@
                 android:clickable="false"
                 android:focusable="false" />
 
-        </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+        </com.meetingcpp.sched.ui.widget.AspectRatioView>
     </LinearLayout>
 </ScrollView>

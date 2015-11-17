@@ -16,7 +16,7 @@
   -->
 <resources>
 
-    <style name="Theme.IOSched.SessionDetails" parent="Theme.IOSched.SessionDetails.Base">
+    <style name="Theme.Meeting.SessionDetails" parent="Theme.Meeting.SessionDetails.Base">
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:windowFullscreen">true</item>
 

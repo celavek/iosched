@@ -17,7 +17,7 @@
 
 <!-- this extension to LinearLayout adds a foreground drawable which we use to provide touch
      feedback on the entire row. -->
-<com.google.samples.apps.iosched.ui.widget.ForegroundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.meetingcpp.sched.ui.widget.ForegroundLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
     android:background="@android:color/transparent"
     android:foreground="?android:selectableItemBackground">
 
-    <com.google.samples.apps.iosched.ui.widget.AspectRatioView
+    <com.meetingcpp.sched.ui.widget.AspectRatioView
         android:layout_width="@dimen/video_thumb_width"
         android:layout_height="0dp"
         app:aspectRatio="@dimen/aspect_16_9">
@@ -50,7 +50,7 @@
             android:src="@drawable/ic_play_circle_fill_white_24dp"
             android:layout_gravity="center" />
 
-    </com.google.samples.apps.iosched.ui.widget.AspectRatioView>
+    </com.meetingcpp.sched.ui.widget.AspectRatioView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,4 +86,4 @@
 
     </LinearLayout>
 
-</com.google.samples.apps.iosched.ui.widget.ForegroundLinearLayout>
+</com.meetingcpp.sched.ui.widget.ForegroundLinearLayout>

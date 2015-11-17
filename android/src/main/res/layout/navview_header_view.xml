@@ -45,7 +45,7 @@
             android:paddingBottom="@dimen/navview_header_bottom_padding"
             android:id="@+id/chosen_account_content_view"
             android:orientation="vertical">
-        <com.google.samples.apps.iosched.ui.widget.BezelImageView
+        <com.meetingcpp.sched.ui.widget.BezelImageView
                 android:id="@+id/profile_image"
                 android:layout_width="@dimen/navview_profile_image_size"
                 android:layout_height="@dimen/navview_profile_image_size"

@@ -26,10 +26,10 @@
     <style name="Theme" parent="FrameworkRoot.Theme">
         <!-- Only needed for pre-L -->
         <item name="android:editTextBackground">@drawable/edit_text</item>
-        <item name="android:editTextStyle">@style/Widget.IOSched.EditText</item>
+        <item name="android:editTextStyle">@style/Widget.Meeting.EditText</item>
     </style>
 
-    <style name="Theme.IOSched.Base" parent="Theme">
+    <style name="Theme.Meeting.Base" parent="Theme">
         <item name="actionBarIconColor">#fff</item>
         <item name="actionBarInsetStart">@dimen/keyline_2</item>
         <item name="homeAsUpIndicator">@drawable/ic_up</item>
@@ -51,23 +51,23 @@
         <item name="android:windowBackground">@android:color/white</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_up</item>
 
-        <item name="android:popupMenuStyle">@style/Widget.IOSched.PopupMenu</item>
-        <item name="android:listPopupWindowStyle">@style/Widget.IOSched.PopupMenu</item>
-        <item name="android:dropDownListViewStyle">@style/Widget.IOSched.ListView.DropDown</item>
+        <item name="android:popupMenuStyle">@style/Widget.Meeting.PopupMenu</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.Meeting.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Meeting.ListView.DropDown</item>
         <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.LargePopupMenu</item>
 
         <item name="imageItemBackground">?android:selectableItemBackground</item>
         <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
     </style>
 
-    <style name="Theme.IOSched" parent="Theme.IOSched.Base" />
+    <style name="Theme.Meeting" parent="Theme.Meeting.Base" />
 
-    <style name="Theme.IOSched.WithNavDrawer" parent="Theme.IOSched" />
+    <style name="Theme.Meeting.WithNavDrawer" parent="Theme.Meeting" />
 
-    <style name="Theme.IOSched.Widget" parent="FrameworkRoot.Widget">
-        <item name="android:popupMenuStyle">@style/Widget.IOSched.PopupMenu</item>
-        <item name="android:listPopupWindowStyle">@style/Widget.IOSched.PopupMenu</item>
-        <item name="android:dropDownListViewStyle">@style/Widget.IOSched.ListView.DropDown</item>
+    <style name="Theme.Meeting.Widget" parent="FrameworkRoot.Widget">
+        <item name="android:popupMenuStyle">@style/Widget.Meeting.PopupMenu</item>
+        <item name="android:listPopupWindowStyle">@style/Widget.Meeting.PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/Widget.Meeting.ListView.DropDown</item>
         <item name="android:textAppearanceLargePopupMenu">@style/TextAppearance.LargePopupMenu</item>
     </style>
 
@@ -84,44 +84,44 @@
 
     <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="Theme.IOSched.Welcome" parent="Theme.IOSched">
+    <style name="Theme.Meeting.Welcome" parent="Theme.Meeting">
         <item name="android:windowBackground">@color/background</item>
     </style>
 
-    <style name="Theme.IOSched.Sessions" parent="Theme.IOSched.WithNavDrawer">
+    <style name="Theme.Meeting.Sessions" parent="Theme.Meeting.WithNavDrawer">
         <item name="actionBarInsetStart">@dimen/keyline_2_minus_16dp</item>
         <item name="spinnerBarInsetStart">@dimen/keyline_2_minus_16dp</item>
         <item name="android:windowBackground">@color/grey_background</item>
     </style>
 
-    <style name="Theme.IOSched.Search" parent="Theme.IOSched">
+    <style name="Theme.Meeting.Search" parent="Theme.Meeting">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowIsTranslucent">true</item>
-        <item name="autoCompleteTextViewStyle">@style/Widget.IOSched.Search.AutoCompleteTextView</item>
-        <item name="searchViewStyle">@style/Widget.IOSched.SearchView</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.Meeting.Search.AutoCompleteTextView</item>
+        <item name="searchViewStyle">@style/Widget.Meeting.SearchView</item>
         <item name="colorControlNormal">@color/app_body_text_2</item>
         <item name="colorControlActivated">@color/theme_accent_1</item>
     </style>
 
-    <style name="Widget.IOSched.SearchView" parent="Widget.AppCompat.SearchView">
+    <style name="Widget.Meeting.SearchView" parent="Widget.AppCompat.SearchView">
         <item name="searchHintIcon">@null</item>
         <item name="queryBackground">@null</item>
         <item name="submitBackground">@null</item>
     </style>
 
-    <style name="Widget.IOSched.Search.AutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
+    <style name="Widget.Meeting.Search.AutoCompleteTextView" parent="Widget.AppCompat.Light.AutoCompleteTextView">
         <item name="android:textColorHint">@color/app_body_text_2</item>
         <!-- If set to @null the cursor will be displayed using android:textColor -->
         <item name="android:textCursorDrawable">@null</item>
     </style>
 
-    <style name="Theme.IOSched.VideoLibrary" parent="Theme.IOSched.WithNavDrawer" />
+    <style name="Theme.Meeting.VideoLibrary" parent="Theme.Meeting.WithNavDrawer" />
 
-    <style name="Theme.IOSched.Feedback" parent="Theme.IOSched">
+    <style name="Theme.Meeting.Feedback" parent="Theme.Meeting">
         <item name="colorAccent">@color/flat_button_text</item>
     </style>
 
-    <style name="Widget.IOSched.HeaderBar.Spinner.Base" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+    <style name="Widget.Meeting.HeaderBar.Spinner.Base" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
         <item name="android:background">?android:selectableItemBackground</item>
         <item name="android:dropDownSelector">?android:selectableItemBackground</item>
         <item name="android:divider">@null</item>
@@ -129,13 +129,13 @@
         <item name="android:overlapAnchor">true</item>
     </style>
 
-    <style name="Widget.IOSched.HeaderBar.Spinner" parent="Widget.IOSched.HeaderBar.Spinner.Base" />
+    <style name="Widget.Meeting.HeaderBar.Spinner" parent="Widget.Meeting.HeaderBar.Spinner.Base" />
 
-    <style name="Widget.IOSched.PopupMenu" parent="Widget.AppCompat.Light.PopupMenu">
+    <style name="Widget.Meeting.PopupMenu" parent="Widget.AppCompat.Light.PopupMenu">
         <item name="android:dropDownSelector">?popupItemBackground</item>
     </style>
 
-    <style name="Widget.IOSched.ListView.DropDown" parent="Widget.AppCompat.Light.ListView.DropDown">
+    <style name="Widget.Meeting.ListView.DropDown" parent="Widget.AppCompat.Light.ListView.DropDown">
         <item name="android:listSelector">?popupItemBackground</item>
         <item name="android:divider">@null</item>
         <item name="android:dividerHeight">0dp</item>
@@ -146,23 +146,23 @@
     </style>
 
     <!-- My Schedule -->
-    <style name="Theme.IOSched.MySchedule" parent="Theme.IOSched.WithNavDrawer" />
+    <style name="Theme.Meeting.MySchedule" parent="Theme.Meeting.WithNavDrawer" />
 
     <!-- Intermediary theme for SessionDetails (so we can override it on large screens) -->
-    <style name="Theme.IOSched.SessionDetails.Base" parent="Theme.IOSched">
+    <style name="Theme.Meeting.SessionDetails.Base" parent="Theme.Meeting">
         <item name="isFloatingWindow">false</item>
     </style>
 
     <!-- Session Details -->
-    <style name="Theme.IOSched.SessionDetails" parent="Theme.IOSched.SessionDetails.Base" />
+    <style name="Theme.Meeting.SessionDetails" parent="Theme.Meeting.SessionDetails.Base" />
 
     <!-- Social -->
-    <style name="Theme.IOSched.Social" parent="Theme.IOSched.WithNavDrawer">
+    <style name="Theme.Meeting.Social" parent="Theme.Meeting.WithNavDrawer">
         <item name="android:windowBackground">@color/grey_background</item>
     </style>
 
     <!-- Account chooser -->
-    <style name="Theme.IOSched.Accounts" parent="Theme.IOSched">
+    <style name="Theme.Meeting.Accounts" parent="Theme.Meeting">
         <item name="android:actionBarStyle">@style/ActionBar.Accounts</item>
     </style>
 
@@ -174,7 +174,7 @@
     <style name="TabIndicator" />
 
     <!-- Live stream -->
-    <style name="Theme.IOSched.Livestream" parent="Theme.IOSched">
+    <style name="Theme.Meeting.Livestream" parent="Theme.Meeting">
         <item name="android:windowBackground">@color/grey_background</item>
         <item name="actionBarInsetStart">@dimen/keyline_2_minus_16dp</item>
     </style>
@@ -296,7 +296,7 @@
     </style>
 
     <!-- Map -->
-    <style name="Theme.IOSched.Map" parent="Theme.IOSched.WithNavDrawer" />
+    <style name="Theme.Meeting.Map" parent="Theme.Meeting.WithNavDrawer" />
 
 
     <style name="MapRoomTitle">
@@ -321,7 +321,7 @@
         <item name="android:textColor">@color/unselected_tab_on_primary</item>
     </style>
 
-    <style name="Widget.IOSched.EditText" parent="Widget.AppCompat.EditText">
+    <style name="Widget.Meeting.EditText" parent="Widget.AppCompat.EditText">
         <item name="android:background">@drawable/edit_text</item>
     </style>
 
@@ -365,7 +365,7 @@
     </style>
 
     <!-- Buttons -->
-    <style name="Theme.IOSched.CardView.Button" parent="ThemeOverlay.AppCompat.Light">
+    <style name="Theme.Meeting.CardView.Button" parent="ThemeOverlay.AppCompat.Light">
         <item name="android:textColor">@color/theme_primary</item>
         <item name="colorButtonNormal">@color/button_dark</item>
     </style>

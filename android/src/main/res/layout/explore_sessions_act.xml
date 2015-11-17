@@ -26,13 +26,13 @@
     android:fitsSystemWindows="true">
 
     <!-- Main layout -->
-    <com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout
+    <com.meetingcpp.sched.ui.widget.DrawShadowFrameLayout
         android:id="@+id/main_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:shadowDrawable="@drawable/header_shadow">
 
-        <fragment android:name="com.google.samples.apps.iosched.explore.ExploreSessionsFragment"
+        <fragment android:name="com.meetingcpp.sched.explore.ExploreSessionsFragment"
             android:id="@+id/explore_sessions_frag"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
@@ -48,7 +48,7 @@
 
         </LinearLayout>
 
-    </com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout>
+    </com.meetingcpp.sched.ui.widget.DrawShadowFrameLayout>
 
     <!-- Filter drawer -->
     <include layout="@layout/explore_sessions_act_alt_drawer_layout" />

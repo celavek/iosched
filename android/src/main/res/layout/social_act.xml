@@ -25,7 +25,7 @@
         tools:context=".social.SocialActivity">
 
     <!-- Main layout -->
-    <com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout
+    <com.meetingcpp.sched.ui.widget.DrawShadowFrameLayout
             android:id="@+id/main_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -35,7 +35,7 @@
                 android:id="@+id/social_frag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:name="com.google.samples.apps.iosched.social.SocialFragment" />
+                android:name="com.meetingcpp.sched.social.SocialFragment" />
 
         <LinearLayout style="@style/HeaderBar"
                       android:id="@+id/headerbar"
@@ -49,7 +49,7 @@
 
         </LinearLayout>
 
-    </com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout>
+    </com.meetingcpp.sched.ui.widget.DrawShadowFrameLayout>
 
     <!-- Nav drawer -->
     <include layout="@layout/navdrawer"/>

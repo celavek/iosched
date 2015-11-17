@@ -26,14 +26,14 @@
         tools:context=".settings.SettingsActivity">
 
     <!-- Main layout -->
-    <com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout
+    <com.meetingcpp.sched.ui.widget.DrawShadowFrameLayout
             android:id="@+id/main_content"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipChildren="false"
             app:shadowDrawable="@drawable/header_shadow">
 
-            <fragment android:name="com.google.samples.apps.iosched.settings.SettingsActivity$SettingsFragment"
+            <fragment android:name="com.meetingcpp.sched.settings.SettingsActivity$SettingsFragment"
                       android:id="@+id/settings_fragment"
                       android:layout_width="match_parent"
                       android:layout_height="match_parent" />
@@ -55,7 +55,7 @@
                      android:layout_marginTop="?actionBarSize">
             <include layout="@layout/deprecated_include_butter_bar" />
         </FrameLayout>
-    </com.google.samples.apps.iosched.ui.widget.DrawShadowFrameLayout>
+    </com.meetingcpp.sched.ui.widget.DrawShadowFrameLayout>
 
     <!-- Nav drawer -->
     <include layout="@layout/navdrawer" />

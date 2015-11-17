@@ -22,7 +22,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.samples.apps.iosched.ui.widget.ObservableScrollView
+    <com.meetingcpp.sched.ui.widget.ObservableScrollView
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -73,7 +73,7 @@
                 android:paddingBottom="@dimen/session_details_extra_space_bottom"
                 android:clipToPadding="false">
 
-                <com.google.samples.apps.iosched.ui.widget.MessageCardView
+                <com.meetingcpp.sched.ui.widget.MessageCardView
                     android:id="@+id/give_feedback_card"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -274,5 +274,5 @@
 
         </FrameLayout>
 
-    </com.google.samples.apps.iosched.ui.widget.ObservableScrollView>
+    </com.meetingcpp.sched.ui.widget.ObservableScrollView>
 </LinearLayout>

@@ -16,9 +16,9 @@
   -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.google.samples.apps.iosched"
-    android:versionCode="333"
-    android:versionName="3.3.3"
+    package="com.meetingcpp.sched"
+    android:versionCode="010"
+    android:versionName="0.1.0"
     android:installLocation="auto">
     <!-- versionName and versionCode are specified in build.gradle -->
 
@@ -28,7 +28,7 @@
         android:targetSdkVersion="21" / -->
 
     <permission
-        android:name="com.google.samples.apps.iosched.permission.WRITE_SCHEDULE"
+        android:name="com.meetingcpp.sched.permission.WRITE_SCHEDULE"
         android:description="@string/permission_write"
         android:label="@string/permission_write"
         android:protectionLevel="normal" />
@@ -57,17 +57,17 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
-        android:name="com.google.samples.apps.iosched.permission.C2D_MESSAGE"
+        android:name="com.meetingcpp.sched.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.google.samples.apps.iosched.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.meetingcpp.sched.permission.C2D_MESSAGE" />
 
     <!-- required for MapView v2 -->
     <permission
-        android:name="com.google.samples.apps.iosched.permission.MAPS_RECEIVE"
+        android:name="com.meetingcpp.sched.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.google.samples.apps.iosched.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.meetingcpp.sched.permission.MAPS_RECEIVE" />
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -78,14 +78,14 @@
         android:maxSdkVersion="18" />
 
     <application
-        android:name=".AppApplication"
+        android:name="AppApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/cppcon_logo"
         android:label="@string/app_name"
         android:logo="@drawable/actionbar_logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.IOSched">
+        android:theme="@style/Theme.Meeting">
 
         <!-- Google Play Services -->
         <meta-data
@@ -102,7 +102,7 @@
         <activity
             android:name=".explore.ExploreIOActivity"
             android:label="@string/app_name"
-            android:theme="@style/Theme.IOSched.Sessions">
+            android:theme="@style/Theme.Meeting.Sessions">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -129,11 +129,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".myschedule.MyScheduleActivity"
+            android:name="myschedule.MyScheduleActivity"
             android:label="@string/title_my_schedule"
             android:parentActivityName=".explore.ExploreIOActivity"
             android:launchMode="singleTop"
-            android:theme="@style/Theme.IOSched.MySchedule"
+            android:theme="@style/Theme.Meeting.MySchedule"
             android:exported="true">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -196,18 +196,18 @@
                         android:scheme="https" />
             </intent-filter>
         </activity>
- 
+
         <activity
             android:name=".explore.ExploreSessionsActivity"
             android:label="Explore"
-            android:theme="@style/Theme.IOSched.WithNavDrawer"
+            android:theme="@style/Theme.Meeting.WithNavDrawer"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.dir/vnd.iosched2015.session" />
+                <data android:mimeType="vnd.android.cursor.dir/vnd2015.session" />
             </intent-filter>
         </activity>
 
@@ -215,7 +215,7 @@
             android:name=".settings.SettingsActivity"
             android:label="@string/title_settings"
             android:parentActivityName=".explore.ExploreIOActivity"
-            android:theme="@style/Theme.IOSched.WithNavDrawer"
+            android:theme="@style/Theme.Meeting.WithNavDrawer"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -225,7 +225,7 @@
         <activity
             android:name=".ui.SearchActivity"
             android:label="@string/title_search"
-            android:theme="@style/Theme.IOSched.Search"
+            android:theme="@style/Theme.Meeting.Search"
             android:launchMode="singleTop"
             android:exported="false">
             <!-- This Activity handles the search intent -->
@@ -243,7 +243,7 @@
         <activity
             android:name=".feedback.SessionFeedbackActivity"
             android:label="@string/title_session_feedback"
-            android:theme="@style/Theme.IOSched.Feedback"
+            android:theme="@style/Theme.Meeting.Feedback"
             android:parentActivityName=".explore.ExploreIOActivity"
             android:exported="false">
             <meta-data
@@ -254,18 +254,18 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.iosched2015.session_feedback" />
+                <data android:mimeType="vnd.android.cursor.item/vnd2015.session_feedback" />
             </intent-filter>
         </activity>
 
         <activity
             android:name=".welcome.WelcomeActivity"
-            android:theme="@style/Theme.IOSched.Welcome"
+            android:theme="@style/Theme.Meeting.Welcome"
             android:exported="false" />
 
         <activity
             android:name=".videolibrary.VideoLibraryActivity"
-            android:theme="@style/Theme.IOSched.VideoLibrary"
+            android:theme="@style/Theme.Meeting.VideoLibrary"
             android:label="@string/title_video_library"
             android:parentActivityName=".explore.ExploreIOActivity"
             android:exported="false">
@@ -276,26 +276,26 @@
 
         <activity
             android:name=".videolibrary.VideoLibraryFilteredActivity"
-            android:theme="@style/Theme.IOSched.VideoLibrary"
+            android:theme="@style/Theme.Meeting.VideoLibrary"
             android:label="@string/title_video_library"
             android:parentActivityName=".videolibrary.VideoLibraryActivity"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".videolibrary.VideoLibraryActivity" />
+                android:value=".explore.VideoLibraryActivity" />
         </activity>
 
         <activity
             android:name=".session.SessionDetailActivity"
             android:label="@string/title_session_detail"
-            android:theme="@style/Theme.IOSched.SessionDetails"
+            android:theme="@style/Theme.SessionDetails"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.iosched2015.session" />
+                <data android:mimeType="vnd.android.cursor.item/vnd2015.session" />
             </intent-filter>
             <!-- Android Beam for session details -->
             <intent-filter>
@@ -303,7 +303,7 @@
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.iosched2015.session" />
+                <data android:mimeType="vnd.android.cursor.item/vnd2015.session" />
             </intent-filter>
             <!-- Web URLs -->
             <!-- URLs are indexed in search engines in the form:
@@ -316,7 +316,7 @@
             android:exported="true"
             android:label="@string/title_map"
             android:parentActivityName=".explore.ExploreIOActivity"
-            android:theme="@style/Theme.IOSched.Map">
+            android:theme="@style/Theme.Meeting.Map">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".explore.ExploreIOActivity" />
@@ -326,7 +326,7 @@
             android:name=".social.SocialActivity"
             android:label="@string/title_activity_new_social"
             android:parentActivityName=".explore.ExploreIOActivity"
-            android:theme="@style/Theme.IOSched.WithNavDrawer"
+            android:theme="@style/Theme.Meeting.WithNavDrawer"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -337,7 +337,7 @@
             android:name=".about.AboutActivity"
             android:label="@string/description_about"
             android:parentActivityName=".explore.ExploreIOActivity"
-            android:theme="@style/Theme.IOSched.WithNavDrawer"
+            android:theme="@style/Theme.Meeting.WithNavDrawer"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -354,7 +354,7 @@
             android:name=".debug.DebugActivity"
             android:label="@string/title_activity_debug_test_runner"
             android:parentActivityName=".explore.ExploreIOActivity"
-            android:theme="@style/Theme.IOSched"
+            android:theme="@style/Theme"
             android:exported="false">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -370,7 +370,7 @@
         <receiver android:name=".receiver.SessionAlarmReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <action android:name="com.google.samples.apps.iosched.action.UPDATE_CALENDAR_COMPLETED" />
+                <action android:name="com.meetingcpp.sched.action.UPDATE_CALENDAR_COMPLETED" />
             </intent-filter>
         </receiver>
 
@@ -419,7 +419,7 @@
                 <!-- Receives the registration id. -->
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
-                <category android:name="com.google.samples.apps.iosched" />
+                <category android:name="com.meetingcpp.sched" />
             </intent-filter>
         </receiver>
 
@@ -436,11 +436,11 @@
 
         <provider
             android:name=".provider.ScheduleProvider"
-            android:authorities="com.google.samples.apps.iosched"
+            android:authorities="com.meetingcpp.sched"
             android:exported="true"
             android:label="@string/app_name"
             android:syncable="true"
-            android:writePermission="com.google.samples.apps.iosched.permission.WRITE_SCHEDULE" />
+            android:writePermission="com.meetingcpp.sched.permission.WRITE_SCHEDULE" />
 
         <service
             android:name=".sync.SyncService"
